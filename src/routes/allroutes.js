@@ -7,7 +7,7 @@ import Posts from "../pages/Posts";
 function Rout() {
   return (
 
-<Routes>
+<Routes  basename={process.env.PUBLIC_URL}>
       <Route path="/" element={<Home />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
